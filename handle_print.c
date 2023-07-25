@@ -8,9 +8,9 @@
  * @flags: active flags calculator
  * @width: width
  * @precision: specifies Precision
- * @size: Specify size
- * Return: 1 
- */
+* @size: Specify size
+* Return: 1 or 2;
+*/
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -47,4 +47,3 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	}
 	return (printd_chars);
 }
-

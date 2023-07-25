@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * is_printable: check if character can be printed
- * @c: Char to check
- * Return: 1 (c is printable), 0 otherwise
- */
+ * is_printable - Evaluates if a char is printable
+ * @c: Char to be evaluated.
+ *
+ * Return: 1 if c is printable, 0 otherwise
+*/
+
 int is_printable(char c)
 {
 	if (c >= 32 && c < 127)
@@ -14,12 +16,12 @@ int is_printable(char c)
 }
 
 /**
- * append_hexa_code - Appends ascci in hexadecimal code 
- * @buffer: character array
- * @i: Index to begin changes
- * @ascii_code: ASSCI CODE
- * Return: 3 (always)
- */
+ * append_hexa_code - Append ascci in hexadecimal code to buffer
+ * @buffer: Array of chars.
+ * @i: Index at which to start appending.
+ * @ascii_code: ASSCI CODE.
+ * Return: Always 3
+*/
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
@@ -40,7 +42,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
  * is_digit - Verify if character is digit
  * @c: Character to be verified
  * Return: 1(c is digit), 0 otherwise
- */
+*/
 int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
@@ -54,7 +56,7 @@ int is_digit(char c)
  * @num: casting number
  * @size: indicate cast type
  * Return: number value casted
- */
+*/
 long int convert_size_number(long int num, int size)
 {
 	if (size == S_LONG)
@@ -70,7 +72,7 @@ long int convert_size_number(long int num, int size)
  * @num: casting number
  * @size: indicate cast type
  * Return: number value casted
- */
+*/
 long int convert_size_unsgnd(unsigned long int num, int size)
 {
 	if (size == S_LONG)
@@ -80,4 +82,3 @@ long int convert_size_unsgnd(unsigned long int num, int size)
 
 	return ((unsigned int)num);
 }
-

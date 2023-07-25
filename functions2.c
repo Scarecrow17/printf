@@ -10,7 +10,7 @@
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -62,7 +62,7 @@ int print_pointer(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -102,7 +102,7 @@ int print_non_printable(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 
 int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -145,7 +145,7 @@ int print_reverse(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {

@@ -6,7 +6,7 @@ void print_buffer(char buffer[], int *buff_ind);
  * _printf - func of printf
  * @format: formatting
  * Return: characters that are Printed
- */
+*/
 int _printf(const char *format, ...)
 {
 	int p, printd = 0, printd_chars = 0;
@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
  * print_buffer - Prints buffer contents if in existance
  * @buffer: character array
  * @buff_ind: Index to add next char, it is length
- */
+*/
 void print_buffer(char buffer[], int *buff_ind)
 {
 	if (*buff_ind > 0)
@@ -64,4 +64,3 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	*buff_ind = 0;
 }
-

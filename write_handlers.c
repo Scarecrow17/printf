@@ -11,7 +11,7 @@
  * @precision: specifies precision
  * @size: specifies Size
  * Return: characters printed counter
- */
+*/
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
 { /* character stored at left and padding at buffer right */
@@ -100,7 +100,7 @@ int handle_write_char(char c, char buffer[],
  *
  * Return: Number of chars printed.
 >>>>>>> 30e7fc5022331624cd6840609c678b0dd53880fa
- */
+*/
 int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -138,7 +138,7 @@ int write_number(int is_negative, int ind, char buffer[],
  * @length: length
  * @padd: Pading character for padding
  * @extra_c: xtra char
- * Return: printed characters counter
+* Return: printed characters counter
 =======
 		extra_ch = '-';
 	else if (flags & F_PLUS)
@@ -161,9 +161,9 @@ int write_number(int is_negative, int ind, char buffer[],
  * @padd: Pading char
  * @extra_c: Extra char
  *
- * Return: Number of printed chars.
+* Return: Number of printed chars.
 >>>>>>> 30e7fc5022331624cd6840609c678b0dd53880fa
- */
+*/
 int write_num(int ind, char buffer[],
 	int flags, int width, int prec,
 	int length, char padd, char extra_c)
@@ -260,7 +260,7 @@ int write_num(int ind, char buffer[],
  *
  * Return: Number of written chars.
 >>>>>>> 30e7fc5022331624cd6840609c678b0dd53880fa
- */
+*/
 int write_unsgnd(int is_negative, int ind,
 	char buffer[],
 	int flags, int width, int precision, int size)
@@ -368,7 +368,7 @@ int write_unsgnd(int is_negative, int ind,
  * @extra_c: Char representing extra char
  * @padd_start: Index at which padding should start
  *
- * Return: Number of written chars.
+* Return: Number of written chars.
 >>>>>>> 30e7fc5022331624cd6840609c678b0dd53880fa
  */
 int write_pointer(char buffer[], int ind, int length,

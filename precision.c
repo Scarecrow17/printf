@@ -6,7 +6,7 @@
  * @i: argument list for printing
  * @list: argument list
  * Return: The Precision
- */
+*/
 int get_precision(const char *format, int *i, va_list list)
 {
 	int curr_p = *i + 1;
@@ -38,4 +38,3 @@ int get_precision(const char *format, int *i, va_list list)
 
 	return (prec);
 }
-

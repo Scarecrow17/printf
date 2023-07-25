@@ -11,7 +11,7 @@
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -29,7 +29,7 @@ int print_char(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -84,7 +84,7 @@ int print_string(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -107,7 +107,7 @@ int print_percent(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -151,7 +151,7 @@ int print_int(va_list types, char buffer[],
  * @precision: it is the Precision
  * @size: Specifies size
  * Return: characters printed counter
- */
+*/
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -186,4 +186,3 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (counter);
 }
-
